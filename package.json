@@ -1,0 +1,63 @@
+{
+  "name": "transbank-onepay-frontend-sdk",
+  "version": "1.0.0",
+  "description": "Transbank Onepay SDK que debe ser integrado en el frontend",
+  "main": "lib/merchant.onepay.min.js",
+  "files": [
+    "/lib",
+    "/html"
+  ],
+  "engines": {
+    "node": "8.12.0"
+  },
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TransbankDevelopers/transbank-sdk-js-onepay.git"
+  },
+  "keywords": [
+    "transbank",
+    "sdk",
+    "pagos"
+  ],
+  "author": "Transbank Developers",
+  "license": "BSD-3 clause",
+  "bugs": {
+    "url": "https://github.com/TransbankDevelopers/transbank-sdk-js-onepay/issues"
+  },
+  "homepage": "https://github.com/TransbankDevelopers/transbank-sdk-js-onepay",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-es6-promise": "^1.1.1",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "babel-register": "^7.0.0-beta.3",
+    "chai": "^4.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.1",
+    "eslint-loader": "^2.1.1",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^4.0.1",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "es6-promise": "~4.2.5",
+    "polyfill-crypto.getrandomvalues": "~1.0.0",
+    "zoid": "~7.0.10"
+  }
+}
